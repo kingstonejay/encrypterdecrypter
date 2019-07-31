@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:text="AES Encryptor/Decryptor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter Password"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/encrypt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Decrypt"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/decrypt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Decrypt"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/msg"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="source folder : sdcard/AESENC"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="dest folder : sdcard/AESENC_DECRYPTED"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
